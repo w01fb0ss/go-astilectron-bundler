@@ -17,6 +17,7 @@ func (l LDFlags) String() string {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
+	o = append(o, "-w -s")
 	for _, k := range keys {
 		ss := l[k]
 		if len(ss) == 0 {
